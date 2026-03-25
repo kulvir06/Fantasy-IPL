@@ -1,0 +1,10 @@
+{
+  "name": "ipl-fantasy-2026",
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "start:server": "cd server && node index.js",
+    "start:client": "cd client && npm start",
+    "setup": "cd server && node -e \"const XLSX=require('xlsx'); console.log('XLSX ok')\" && echo 'Setup verified!'"
+  }
+}
